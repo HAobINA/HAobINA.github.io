@@ -1,0 +1,108 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+  color:white;
+}
+ul,ol{
+  list-style: none
+}
+
+.container{
+  width: 1120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 10;
+  background:#282828;
+  font: 25px/60px "微软雅黑";
+  color: white;
+}
+
+/*banner部分*/
+.banner{
+  width: 100%;
+  height: 560px;
+  background: url(../images/bj.gif);
+  overflow: hidden;
+}
+.parentWrap {
+  width: 1000px;
+  margin: 80px auto;
+}
+.groupTitle {
+  display:block;
+  height:50px;
+  font: 700 20px/50px "singsun";
+  color: white;
+  border-bottom:1px solid white;
+  cursor:pointer;
+}
+.menuGroup > div {
+  display:none;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  font: 500 20px/20px "singsun";
+  color: white;
+}
+
+/*content部分*/
+.content{
+  overflow: hidden;
+  padding: 0 0 100px  0 ;
+}
+.content>h2{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "微软雅黑";
+}
+
+/*footer部分*/
+.footer{
+  width: 100%;
+  height: 50px;
+  background:#282828;
+}
+/*旋转木马*/
+.wrap{
+  width:1200px;
+  margin:0px auto;
+}
+.slide {
+  height:500px;
+  position: relative;
+}
+.slide li{
+  position: absolute;
+  left:200px;
+  top:0;
+}
+.slide li img{
+  width:100%;
+}
+.arrow{
+  opacity: 0;
+}
+.prev,.next{
+  width:100px;
+  height:200px;
+  position: absolute;
+  top:50%;
+  margin-top:-100px;
+  background: url(../images/prev.png) no-repeat;
+  z-index: 99;
+}
+.next{
+  right:0;
+  background-image: url(../images/next.png);
+}
