@@ -7,35 +7,35 @@ window.onload = function () {
     var json = [
         {   //  1
             width: 400,
-            top: 50,
+            top: 20,
             left: 50,
             opacity: 0.2,
             z: 2
         },
         {  // 2
             width: 600,
-            top: 20,
+            top: 70,
             left: 0,
-            opacity: 0.4,
+            opacity: 0.8,
             z: 3
         },
         {   // 3
             width: 800,
             top: 0,
             left: 200,
-            opacity: 0.6,
+            opacity: 1,
             z: 4
         },
         {  // 4
             width: 600,
-            top: 20,
+            top: 70,
             left: 600,
-            opacity: 0.4,
+            opacity: 0.8,
             z: 3
         },
         {   //5
             width: 400,
-            top: 50,
+            top: 20,
             left: 750,
             opacity: 0.2,
             z: 2

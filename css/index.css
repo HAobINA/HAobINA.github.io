@@ -70,43 +70,35 @@ h2{
 
 /*旋转木马*/
 .wrap{
-  width:1200px;
-  margin:0 auto;
+    width:1200px;
+    margin:0 auto;
 }
 .slide {
-  height:500px;
-  position: relative;
+    height:500px;
+    position: relative;
 }
 .slide li{
-  width: 800px;
-  height: 400px;
-  text-align: center;
-  position: absolute;
-  left:200px;
-  top:0;
-  font: 400 50px/400px "微软雅黑";
+    position: absolute;
+    left:200px;
+    top:0;
 }
-.slide li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background:white;
-  color: black;
+.slide li img{
+    width:100%;
 }
 .arrow{
-  opacity: 0;
+    opacity: 0;
 }
 .prev,.next{
-  width:100px;
-  height:200px;
-  position: absolute;
-  top:50%;
-  margin-top:-100px;
-  background: url(../images/prev.png) no-repeat;
-  z-index: 99;
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    margin-top:-56px;
+    background: url(../images/prev.png) no-repeat;
+    z-index: 99;
 }
 .next{
-  right:0;
-  background-image: url(../images/next.png);
+    right:0;
+    background-image: url(../images/next.png);
 }
 
