@@ -6,32 +6,28 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="p1"></div>
-    <div id="m1"></div>
-    <div id="x1"></div>
     <div class="nav">
-        <div class="container">个人简历</div>
+        <h2>个人简历</h2>
     </div>
     <div class="banner">
-        <div class="container">
             <ul class="parentWrap">
                 <li class="menuGroup">
                     <span class="groupTitle">基本信息</span>
-                    <div>姓 名：郝 彬  &nbsp;&nbsp;&nbsp;性 别：男&nbsp;&nbsp;&nbsp;年 龄：2 5&nbsp;&nbsp;&nbsp;民   族：满 族&nbsp;&nbsp;&nbsp;籍 贯 ：河北承德	</div>
+                    <div>姓 名：郝 彬 <br/>性 别：男<br/>年 龄：2 5<br/>民   族：满 族<br/>籍 贯 ：河北承德	</div>
                 </li>
                 <li class="menuGroup">
                     <span class="groupTitle">联系方式</span>
-                    <div>联系方式：185-1323-3963 &nbsp;&nbsp;&nbsp;&nbsp; E-Mail：422457256@qq.com</div>
+                    <div>联系方式：185-1323-3963<br/> <a href="mailto:422457256@qq.com"> E-Mail：422457256@qq.com</a></div>
                 </li>
                 <li class="menuGroup">
                     <span class="groupTitle">教育经历</span>
-                    <div>毕业学校 ：天津轻工职业技术学院&nbsp;&nbsp;毕业时间 ：2014年6月&nbsp;&nbsp;学历 ：大 专&nbsp;&nbsp;专业 ：计算机网络技术</div>
+                    <div>毕业学校 ：天津轻工职业技术学院<br/>毕业时间 ：2014年6月<br/>学历 ：大 专<br/>专业 ：计算机网络技术</div>
                 </li>
                 <li class="menuGroup">
                     <span class="groupTitle">工作经历</span>
                     <div>
                         2014.6- 2015.6              天津文率科技有限公司                       web前端 <br/>
-                        工作职责：
+                        工作职责：<br/>
                         1.  采用DIV+CSS对网页进行布局 <br/>
                         2.  参与前端开发中整个框架的搭建，其中包括前端采用的框架和技术 <br/>
                         3.  原生JS开发,以及基于原生JS的UI组件开发，实现UI要求的网页动态效果 <br/>
@@ -46,19 +42,17 @@
                     </div>
                 </li>
             </ul>
-
-        </div>
+            <div id="next">作品展示 <br/><span><img src="images/jiantou.png"></span></div>
     </div>
     <div class="content">
-        <h2>作品展示</h2>
         <div class="wrap" id="wrap">
             <div class="slide" id="slide">
                 <ul>
-                    <li><a target="_blank" href="./jd/index.html"><img src="images/slidepic1.jpg" alt=""/></a></li>
-                    <li><a target="_blank" href="#"><img src="images/slidepic2.jpg" alt=""/></a></li>
-                    <li><a target="_blank" href="#"><img src="images/slidepic3.jpg" alt=""/></a></li>
-                    <li><a target="_blank" href="#"><img src="images/slidepic4.jpg" alt=""/></a></li>
-                    <li><a target="_blank" href="#"><img src="images/slidepic5.jpg" alt=""/></a></li>
+                    <li><a target="_blank" href="./jd/index.html">仿京东（PC端）</a></li>
+                    <li><a target="_blank" href="#">仿京东（移动端）</a></li>
+                    <li><a target="_blank" href="#">（响应式）</a></li>
+                    <li><a target="_blank" href="#"></a></li>
+                    <li><a target="_blank" href="#"></a></li>
                 </ul>
                 <div class="arrow" id="arrow">
                     <a href="javascript:;" class="prev"></a>
@@ -68,10 +62,8 @@
         </div>
 
     </div>
-    <div class="footer">
-    </div>
-    <script src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/animate.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/myanimate.js"></script>
     <script type="text/javascript" src="js/my.js"></script>
     <script>
         $(function () {
@@ -83,6 +75,9 @@
                 // 3. 让其他的跟div同位置的元素隐藏掉
                 $(this).parent().siblings("li").children("div").hide();
             });
+            $("#next").on("click",function(){
+                $("html,body").animate({scrollTop:$(".content").offset().top-150},600);
+            })
         });
 
     </script>

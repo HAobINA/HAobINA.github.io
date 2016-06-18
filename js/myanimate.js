@@ -1,5 +1,5 @@
 
-function animate(obj, json, fn) {
+function myanimate(obj, json, fn) {
     clearInterval(obj.timer);
     obj.timer = setInterval(function () {
         var flag = true;
