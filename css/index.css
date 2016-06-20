@@ -1,73 +1,98 @@
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
-  margin: 0;
-  padding: 0;
+
+/*初始化css*/
+* {
+    margin: 0;
+    padding: 0;
 }
 html,body{
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: "MicroSoft YaHei", sans-serif;
+    color: #ffffff;
 }
 a{
-  text-decoration: none;
-  color:white;
+    text-decoration: none;
+    color: #ffffff;
 }
 ul,ol{
-  list-style: none
+    list-style: none
+}
+img {
+    border: 0;
+    vertical-align: middle;
 }
 
+/*公共样式*/
+.bx {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*nav 部分*/
 .nav {
-  width: 100%;
-  height: 60px;
-  background:rgba(0,0,0,.1);
-  font: 20px/60px "微软雅黑";
-  color: white;
-  position: fixed;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    background: rgba(27,36,75,0.5);
+    line-height: 60px;
 }
-h2{
-  width: 80%;
-  margin: 0 auto;
+/*cv部分*/
+.cv{
+    width: 100%;
+    height: 100%;
+    background: url(../images/bj.jpg) center center fixed;
+    position:relative;
+    overflow: hidden;
 }
-/*banner部分*/
-.banner{
-  width: 100%;
-  min-height: 100%;
-  background: url(../images/bj.jpg) center center;
-  overflow: hidden;
+.cv > .cv_con {
+    margin-top: 80px;
+    height: 80%;
+    box-sizing: border-box;
+    padding: 20px 50px;
 }
-.parentWrap {
-  width: 70%;
-  margin: 80px auto;
+.cv_con_title  {
+    height: 30px;
+    border-bottom: 1px dashed #ffffff;
 }
-.groupTitle {
-  display:block;
-  height:50px;
-  font: 700 20px/50px "singsun";
-  color: white;
-  border-bottom:1px solid white;
-  cursor:pointer;
+.cv_con_title > li {
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
 }
-.menuGroup > div {
-  display:none;
-  padding: 20px 20px;
-  font: 400 20px/30px "singsun";
-  color: white;
+.cv_con_title > li:hover{
+    font-weight: 600;
+}
+.cv_con_con {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    background: rgba(27,36,75,0.5);
+}
+.cv_con_con > div {
+    width: 100%;
+    height: 100%;
+    display: none;
+    box-sizing: border-box;
+    padding: 30px 80px;
+}
+.cv > #gowork{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.banner>div{
-  position: relative;
+/*work部分*/
+.work{
   width: 100%;
-  height: 60px;
-  text-align: center;
-  font:600 30px/30px "微软雅黑";
-  color:white;
-}
-
-/*content部分*/
-.content{
-  width: 100%;
-  height:100%;
   background: #1b244b;
 }
-
 /*旋转木马*/
 .wrap{
     width:1200px;
@@ -106,11 +131,23 @@ h2{
     height: 50px;
     position: absolute;
     left: 0;
-    bottom: 3px;
+    bottom: 0px;
     box-sizing: border-box;
     padding-left: 40px;
-    font: 400 30px/50px "微软雅黑";
+    font: 400 30px/50px "MicroSoft YaHei";
     color: white;
     background: rgba(0,0,0,.5);
 }
-
+/*返回顶部*/
+#backTop {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    background: rgba(0,0,0,.7);
+    z-index: 10000;
+    cursor: pointer;
+}
